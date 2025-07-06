@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARジモティ - ご近所さんと、もっと繋がる。</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@700&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed w-full z-10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-yellow-400 tracking-wider section-title">BARジモティ</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#concept" class="hover:text-yellow-400 transition-colors">コンセプト</a>
+                <a href="#features" class="hover:text-yellow-400 transition-colors">3つの魅力</a>
+                <a href="#join" class="hover:text-yellow-400 transition-colors">参加方法</a>
+            </nav>
+            <a href="#join" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                今すぐ参加する
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center fade-in">
+        <div class="px-6">
+            <h2 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-4 section-title">今夜、ご近所さんと一杯どう？</h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">オンラインで、リアルで。新しい「ご近所付き合い」が、ここから始まる。</p>
+            <a href="#join" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 ease-in-out transform hover:scale-105">
+                コミュニティに参加する <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-20">
+        <!-- Concept Section -->
+        <section id="concept" class="text-center mb-24 fade-in">
+            <h3 class="text-4xl font-bold mb-6 section-title text-yellow-400">Welcome to BAR JimoTee</h3>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                ただの飲み仲間じゃない、もっと深い繋がりが、ここにある。<br>
+                仕事や普段の生活圏を越えて、趣味や好きなことで繋がる毎日へ。<br>
+                「BARジモティ」は、あなたの日常をちょっと特別にする、新しいカタチのコミュニティです。
+            </p>
+        </section>
+
+        <!-- For You Section -->
+        <section id="for-you" class="mb-24 bg-gray-800 rounded-xl p-10 fade-in">
+            <h3 class="text-3xl font-bold text-center mb-10 section-title">こんな<span class="text-yellow-400">仲間</span>、待ってます</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-users text-yellow-400 text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">近所に友達が欲しい</h4>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-briefcase text-yellow-400 text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">仕事以外の繋がりが欲しい</h4>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-comments text-yellow-400 text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">同じ趣味の仲間と語りたい</h4>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-rocket text-yellow-400 text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">何か新しい刺激が欲しい</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="mb-24 fade-in">
+            <h3 class="text-4xl font-bold text-center mb-12 section-title">BARジモティ <span class="text-yellow-400">3つの魅力</span></h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-glass-cheers text-yellow-400 text-3xl mb-4"></i>
+                    <h4 class="text-2xl font-bold mb-3">毎日のオンライン飲み会</h4>
+                    <p class="text-gray-400">毎晩開催されるオンライン飲み会。好きな時間にふらっと立ち寄って、ご近所さんと気軽にトーク。今日は誰と話す？</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-yellow-400 text-3xl mb-4"></i>
+                    <h4 class="text-2xl font-bold mb-3">週末のリアルイベント</h4>
+                    <p class="text-gray-400">週末はオフラインで乾杯！BBQや趣味のイベントなど、実際に会って仲を深めるチャンスが満載です。</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-gamepad text-yellow-400 text-3xl mb-4"></i>
+                    <h4 class="text-2xl font-bold mb-3">多彩な趣味の分"部屋"</h4>
+                    <p class="text-gray-400">アニメ、ゲーム、料理、スポーツ…共通の趣味で集まる「部屋」で、好きなことを心ゆくまで語り合おう。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="mb-24 fade-in">
+            <h3 class="text-4xl font-bold text-center mb-12 section-title">参加者の<span class="text-yellow-400">声</span></h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-xl">
+                    <p class="text-gray-300 mb-4 italic">"引っ越してきたばかりで不安でしたが、すぐに友達ができて毎日が楽しいです！オンラインで話してから会うので、初対面でも安心でした。"</p>
+                    <p class="font-bold text-right text-yellow-400">- 20代 女性 / デザイナー</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl">
+                    <p class="text-gray-300 mb-4 italic">"普段の職場では出会えないような職種の人と話せるのが面白い。自分の知らない世界の話が聞けて、すごく刺激になっています。"</p>
+                    <p class="font-bold text-right text-yellow-400">- 30代 男性 / エンジニア</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Join Section -->
+        <section id="join" class="text-center bg-yellow-500 text-gray-900 py-20 rounded-xl fade-in">
+            <h3 class="text-4xl font-bold mb-4 section-title">さあ、新しい日常へ。</h3>
+            <p class="text-lg mb-10">参加はカンタン、3ステップ！</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 px-4">
+                <div class="flex items-center">
+                    <div class="bg-gray-900 text-yellow-400 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">1</div>
+                    <p class="ml-4 font-bold">ジモティアプリをDL</p>
+                </div>
+                <i class="fas fa-arrow-right text-2xl hidden md:block"></i>
+                <i class="fas fa-arrow-down text-2xl md:hidden"></i>
+                <div class="flex items-center">
+                    <div class="bg-gray-900 text-yellow-400 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">2</div>
+                    <p class="ml-4 font-bold">「BARジモティ」を検索</p>
+                </div>
+                <i class="fas fa-arrow-right text-2xl hidden md:block"></i>
+                <i class="fas fa-arrow-down text-2xl md:hidden"></i>
+                <div class="flex items-center">
+                    <div class="bg-gray-900 text-yellow-400 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">3</div>
+                    <p class="ml-4 font-bold">参加ボタンをタップ！</p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="#" class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    アプリストアで「ジモティ」を探す
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 BARジモティ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
